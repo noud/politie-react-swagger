@@ -1,4 +1,4 @@
-# Code generated [React](https://reactjs.org) [Redux](https://redux.js.org) [PWA](https://en.wikipedia.org/wiki/Progressive_web_applications) to [REST](http://en.wikipedia.org/wiki/REST) [JSON]() conform [Swagger](http://swagger.io) [OpenAPI](http://swagger.io/resources/open-api)
+# Code generate [React](https://reactjs.org) [Redux](https://redux.js.org) [PWA](https://en.wikipedia.org/wiki/Progressive_web_applications) to [REST](http://en.wikipedia.org/wiki/REST) [JSON]() conform [Swagger](http://swagger.io) [OpenAPI](http://swagger.io/resources/open-api)
 
 ![React Redux OpenApi Politie politiebureaus](./docs/react-redux-openapi-politie-politiebureaus.png?raw=true "React Redux OpenApi Politie politiebureaus")
 
