@@ -7,7 +7,7 @@
 
 [API-First](https://swagger.io/resources/articles/adopting-an-api-first-approach/) development to facilitate a [Rapid-application development (RAD)](https://en.wikipedia.org/wiki/Rapid_application_development) process.
 
-## [Nederlandse landelijke Politie Open data API](https://github.com/noud/politie-open-data-api/blob/master/README.md) back end
+## [Nederlandse Politie Open data API](https://github.com/noud/politie-open-data-api/blob/master/README.md) back end
 
 ## Code generation
 
@@ -17,4 +17,4 @@ Generate and start this client with.
 cd react-redux-openapi-politie && bin/provision.sh
 ```
 
-# [📁 Portfolio](https://github.com/noud/portfolio#portfolio-repositories-index)
+# [📁 Portfolio](http://github.com/noud/portfolio#portfolio-repositories-index)
