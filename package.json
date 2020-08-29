@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "create-react-app": "^3.4.1"
+  },
+  "license": "MIT",
+  "private": false,
+  "dependencies": {}
+}
