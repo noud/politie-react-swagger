@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+
 export APP_NAME=politie-client
 
 cp src-edited/config/entrypoint.js ${APP_NAME}/src/config/
