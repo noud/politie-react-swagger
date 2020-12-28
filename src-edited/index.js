@@ -13,13 +13,19 @@ import {
 } from 'connected-react-router';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
-import * as serviceWorker from './serviceWorker';
+// import * as serviceWorker from './serviceWorker';
 // Import your reducers and routes here
 
 import adres from './reducers/adres/';
-// import politiebureau from './reducers/politiebureau/';
 import adresRoutes from './routes/adres';
-// import politiebureauRoutes from './routes/politiebureau';
+import afbeelding from './reducers/afbeelding/';
+import afbeeldingRoutes from './routes/afbeelding';
+import locatie from './reducers/locatie/';
+import locatieRoutes from './routes/locatie';
+import politiebureau from './reducers/politiebureau/';
+import politiebureauRoutes from './routes/politiebureau';
+// import politiebureauslocatie from './reducers/politiebureauslocatie/';
+// import politiebureauslocatieRoutes from './routes/politiebureauslocatie';
 
 // import Welcome from './Welcome';
 
@@ -30,7 +36,10 @@ const store = createStore(
     form,
     /* Add your reducers here */
     adres,
-    // politiebureau
+    afbeelding,
+    locatie,
+    politiebureau,
+    // politiebureauslocatie
   }),
   applyMiddleware(routerMiddleware(history), thunk)
 );
@@ -42,7 +51,10 @@ ReactDOM.render(
         {/* <Route path="/" component={Welcome} strict={true} exact={true}/> */}
         {/* Add your routes here */}
         {adresRoutes}
-        {/* {politiebureauRoutes} */}
+        {afbeeldingRoutes}
+        {locatieRoutes}
+        {politiebureauRoutes}
+        {/* {politiebureauslocatieRoutes} */}
         <Route render={() => <h1>Not Found</h1>} />
       </Switch>
     </ConnectedRouter>
@@ -53,4 +65,4 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// serviceWorker.unregister();
