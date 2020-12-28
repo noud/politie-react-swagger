@@ -16,10 +16,10 @@ import 'font-awesome/css/font-awesome.css';
 import * as serviceWorker from './serviceWorker';
 // Import your reducers and routes here
 
-import link from './reducers/link/';
-import politiebureau from './reducers/politiebureau/';
-import linkRoutes from './routes/link';
-import politiebureauRoutes from './routes/politiebureau';
+import adres from './reducers/adres/';
+// import politiebureau from './reducers/politiebureau/';
+import adresRoutes from './routes/adres';
+// import politiebureauRoutes from './routes/politiebureau';
 
 // import Welcome from './Welcome';
 
@@ -29,8 +29,8 @@ const store = createStore(
     router: connectRouter(history),
     form,
     /* Add your reducers here */
-    link,
-    politiebureau
+    adres,
+    // politiebureau
   }),
   applyMiddleware(routerMiddleware(history), thunk)
 );
@@ -41,8 +41,8 @@ ReactDOM.render(
       <Switch>
         {/* <Route path="/" component={Welcome} strict={true} exact={true}/> */}
         {/* Add your routes here */}
-        {linkRoutes}
-        {politiebureauRoutes}
+        {adresRoutes}
+        {/* {politiebureauRoutes} */}
         <Route render={() => <h1>Not Found</h1>} />
       </Switch>
     </ConnectedRouter>
