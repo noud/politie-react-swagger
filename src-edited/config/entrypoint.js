@@ -1,2 +1,1 @@
-export const ENTRYPOINT = 'http://politie.localhost/api/';
-// export const ENTRYPOINT = 'http://politie.localhost/api/links/';
+export const ENTRYPOINT = 'http://laravel.localhost/api/v1/';
