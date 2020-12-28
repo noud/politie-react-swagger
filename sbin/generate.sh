@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-APP_NAME=politie-client
+export APP_NAME=my-app
 
 cd ${APP_NAME}
 
@@ -9,4 +9,4 @@ npx @api-platform/client-generator http://laravel.localhost/docs src/ --format s
 # npx @api-platform/client-generator http://laravel.localhost/docs src/ --format swagger --resource politiebureaus
 # npx @api-platform/client-generator http://laravel.localhost/docs src/ --format swagger --resource links
 
-cd .. && bin/edited.sh
+cd .. && sbin/edited.sh
