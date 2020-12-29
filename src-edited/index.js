@@ -13,7 +13,7 @@ import {
 } from 'connected-react-router';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
-// import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './serviceWorker';
 // Import your reducers and routes here
 
 import adres from './reducers/adres/';
@@ -27,7 +27,7 @@ import politiebureauRoutes from './routes/politiebureau';
 // import politiebureauslocatie from './reducers/politiebureauslocatie/';
 // import politiebureauslocatieRoutes from './routes/politiebureauslocatie';
 
-// import Welcome from './Welcome';
+import Welcome from './Welcome';
 
 const history = createBrowserHistory();
 const store = createStore(
@@ -48,7 +48,7 @@ ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <Switch>
-        {/* <Route path="/" component={Welcome} strict={true} exact={true}/> */}
+        <Route path="/" component={Welcome} strict={true} exact={true}/>
         {/* Add your routes here */}
         {adresRoutes}
         {afbeeldingRoutes}
@@ -65,4 +65,4 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-// serviceWorker.unregister();
+serviceWorker.unregister();
