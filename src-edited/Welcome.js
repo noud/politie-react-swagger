@@ -39,8 +39,11 @@ const Welcome = () => (
                         This container host a generated <b>Progressive Web App</b>{' '}
                         ({'http:' === document.location.protocol ? <a href={`https://${document.domain}`}>HTTPS</a> : <a href={`http://${document.domain}`}>HTTP</a>}):
                         <ul>
-                          <li><Link to="books/">Books</Link></li>
-                          <li><Link to="reviews/">Reviews</Link></li>
+                          <li><Link to="adres/">Adres</Link></li>
+                          <li><Link to="afbeeldings/">Afbeeldings</Link></li>
+                          <li><Link to="locaties/">Locaties</Link></li>
+                          <li><Link to="politiebureaus/">Politiebureaus</Link></li>
+                          {/* <li><Link to="politiebureausLocaties/">PolitiebureausLocaties</Link></li> */}
                         </ul>
                     </p>
                 </div>
