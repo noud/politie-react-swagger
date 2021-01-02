@@ -17,6 +17,8 @@ import * as serviceWorker from './serviceWorker';
 // Import your reducers and routes here
 
 import adres from './reducers/adres/';
+import bezoekadresRoutes from './routes/bezoekadres';
+import postadresRoutes from './routes/postadres';
 import adresRoutes from './routes/adres';
 import afbeelding from './reducers/afbeelding/';
 import afbeeldingRoutes from './routes/afbeelding';
@@ -35,6 +37,7 @@ const store = createStore(
     router: connectRouter(history),
     form,
     /* Add your reducers here */
+    pet,
     adres,
     afbeelding,
     locatie,
@@ -50,6 +53,8 @@ ReactDOM.render(
       <Switch>
         <Route path="/" component={Welcome} strict={true} exact={true}/>
         {/* Add your routes here */}
+        {bezoekadresRoutes}
+        {postadresRoutes}
         {adresRoutes}
         {afbeeldingRoutes}
         {locatieRoutes}
